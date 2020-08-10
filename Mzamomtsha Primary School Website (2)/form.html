@@ -1,0 +1,22 @@
+<!DOCTYPE.html>
+<html>
+<head>
+<style> table { font-family : Helvetica;	font-size : 100%; font-weight: bold;}
+ h1 { color: #ea503f; font-family: Arial; }
+ function myFunction()
+ { var str = "Visit W3Schools";
+  var patt = /w3schools/i;
+   var result = str.match(patt);
+   document.getElementById("demo").innerHTML = result;}</script>
+   	 <script>
+     	 </style> <h1> Registration Form</h1>
+     </head>
+     <body>
+     	<script>	const formData = new FormData();const fileField = document.querySelector('input[type="file"]');
+      formData.append('username', 'abc123');formData.append('avatar', fileField.files[0]); fetch('https://example.com/profile/avatar',
+      { method: 'PUT', body: formData}).then(response => response.json()).then(result => { console.log('Success:', result);}).catch(error => { console.error('Error:', error);});
+      	</script>
+        	<form>	<table>		<tr>			<td>				Email Address:			</td> 			<td>				<input type=”mail” placeholder=”Email” name=””>			</td>		</tr><tr><td>				Password:			</td> 			<td>				<input type=”Password” placeholder=”Password” name=””>			</td>		</tr>		</table> 	<input type="checkbox" name="Male" value="Male"> Male<br> <input type="checkbox" name="Female" value="Female"> Female<br>	Cover Letter: <br>	<textarea rows="4" cols="50" name="comment" form="usrform">Cover Letter...</textarea><br>	Upload Documents: <br>	<body onload="GetFileInfo ()"> <input type="file" id="fileInput" multiple="multiple" size="60" onchange="GetFileInfo ()" />
+           <div id="info" style="margin-top:30px"></div>	 <input type="Submit" Value="Submit"><br> </form>
+            </body>
+            </html>
